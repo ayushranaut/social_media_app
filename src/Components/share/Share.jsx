@@ -52,7 +52,7 @@ export default function Share() {
             className="border-none p-2 rounded-md bg-red-600 font-bold mr-5 cursor-pointer text-white"
             onClick={handleShare}
           >
-            Share
+            Post
           </button>
         </div>
       </div>

@@ -7,6 +7,9 @@ function Register() {
   const [data, setData] = useState({
     name: "",
     email: "",
+    password:"",
+    department:"",
+    graduationYear:"",
   });
 
   const handleInputChange = (e) => {
@@ -35,7 +38,7 @@ function Register() {
               Name
             </label>
             <input
-              type="text"
+              type=""
               name="name"
               className="border w-full text-base px-2 py-1 focus:outline-none"
               placeholder="Enter your name..."
@@ -53,6 +56,46 @@ function Register() {
               className="border w-full text-base px-2 py-1 focus:outline-none"
               placeholder="Enter your Email ID..."
               value={data.email}
+              onChange={handleInputChange}
+            />
+          </div>
+          <div className="mt-3">
+            <label htmlFor="email" className="block text-base mb-2">
+              Password
+            </label>
+            <input
+              type="password"
+              name="email"
+              className="border w-full text-base px-2 py-1 focus:outline-none"
+              placeholder="Enter your password..."
+              value={data.password}
+              onChange={handleInputChange}
+            />
+          </div>
+          <div className="mt-3">
+            <label htmlFor="email" className="block text-base mb-2">
+             Department
+            </label>
+            <input
+              type="text"
+              name="email"
+              className="border w-full text-base px-2 py-1 focus:outline-none"
+              placeholder="Enter your password..."
+              value={data.department}
+              onChange={handleInputChange}
+            />
+          </div>
+          <div className="mt-3">
+            <label htmlFor="email" className="block text-base mb-2">
+            Graduation Year
+            </label>
+            <input
+              type="number"
+              min="2025" max="2099" step="1" 
+              name="email"
+              className="border w-full text-base px-2 py-1 focus:outline-none"
+              placeholder="Enter your password..."
+              value={data.graduationYear}
               onChange={handleInputChange}
             />
           </div>
